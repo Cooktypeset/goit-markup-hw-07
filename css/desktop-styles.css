@@ -1,4 +1,13 @@
-:root {
+.container {
+  width: 100%;
+  max-width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* :root {
   --main-color: #434455;
   --main-title-color: #2e2f42;
   --accent-hoverfa-color: #404bbf;
@@ -46,14 +55,8 @@ img {
 button {
   cursor: pointer;
 }
-.container {
-  width: 1158px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.page-header-container {
+
+.header-container-desctop{
   display: flex;
 }
 .navigation {
@@ -139,7 +142,7 @@ button {
   text-align: center;
 }
 
-/* ==============================PORTFOLIOFLEX===================== */
+/* ==============================PORTFOLIOFLEX===================== 
 .buttons {
   display: flex;
   align-items: center;
@@ -158,8 +161,8 @@ button {
   margin-bottom: 8px;
 }
 
-/* ===============================================HEADER================================== */
-/*===================================LOGO===============================*/
+/* ===============================================HEADER================================== 
+/*===================================LOGO===============================
 .top-header {
   border-bottom: 1px solid var(--additional-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -181,7 +184,7 @@ button {
   text-transform: uppercase;
   color: var(--main-title-color);
 }
-/*===========================NAVIGATION================================*/
+/*===========================NAVIGATION================================
 .menu-nav {
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -195,7 +198,7 @@ button {
   color: var(--accent-hoverfa-color);
 }
 
-.studio-after {
+.studio-after {W
   position: relative;
   padding-top: 24px;
   padding-bottom: 28px;
@@ -212,7 +215,7 @@ button {
   border-radius: 2px;
 }
 
-/*=================================ADDRESS==============================*/
+/*=================================ADDRESS==============================
 .mail {
   font-style: normal;
   letter-spacing: 0.02em;
@@ -235,7 +238,7 @@ button {
 .address:focus {
   color: var(--accent-hoverfa-color);
 }
-/*==================================MAIN SECTION1==============================*/
+/*==================================MAIN SECTION1==============================
 .section {
   padding-top: 188px;
   padding-bottom: 188px;
@@ -387,7 +390,7 @@ button {
   visibility: auto;
   pointer-events: none;
 }
-/*=====================================SECTION2==============================*/
+/*=====================================SECTION2==============================
 
 .start {
   padding-top: 120px;
@@ -408,7 +411,7 @@ button {
   color: var(--main-color);
 }
 
-/*=====================================SECTION3=============================*/
+/*=====================================SECTION3=============================
 .content {
   padding-top: 60px;
   padding-bottom: 120px;
@@ -429,13 +432,13 @@ button {
   background-blend-mode: soft-light, normal;
   border: 1px solid var(--additional-color);
 }
-.start, /*SECTION2*/
-.content,/*SECTION3*/
-.clients,/*SECTION5*/
+.start, /*SECTION2
+.content,/*SECTION3
+.clients,/*SECTION5
 .section-portfolio {
   background-color: var(--phon-white-color);
 }
-/*=========================================SECTION4=================================*/
+/*=========================================SECTION4=================================
 .subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -452,7 +455,7 @@ button {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-/* ======================================SECTION5========================================= */
+/* ======================================SECTION5========================================= 
 .clients {
   padding-top: 120px;
   padding-bottom: 110px;
@@ -496,7 +499,7 @@ button {
 .clients-icon {
   fill: currentColor;
 }
-/*================================FOOTER=====================================*/
+/*================================FOOTER=====================================
 .container-holder {
   display: flex;
   align-items: baseline;
@@ -523,7 +526,7 @@ button {
   margin-top: 16px;
   width: 264px;
 }
-/* =================================ICON FOOTER====================================== */
+/* =================================ICON FOOTER====================================== 
 .holder-icon-subtitle {
   display: flex;
   justify-content: flex-start;
@@ -565,7 +568,7 @@ button {
   width: 208px;
   margin-left: 120px;
 }
-/* ==========================================PORTFOLIO===================================== */
+/* ==========================================PORTFOLIO===================================== 
 /* HEADER IN STUDIO */
 .section-portfolio {
   padding-top: 96px;
@@ -666,8 +669,8 @@ button {
   transform: translateY(0);
 }
 /* FOOTER IN STUDIO */
-/* ======================ICONS====================== */
-/* ==================DECORATIVEICONS SECTION2================= */
+/* ======================ICONS====================== 
+/* ==================DECORATIVEICONS SECTION2================= 
 .decorative-container {
   display: flex;
   justify-content: center;
@@ -677,7 +680,7 @@ button {
   margin-bottom: 8px;
 }
 
-/* =========ICONSSOCIAL SECTION4 ========== */
+/* =========ICONSSOCIAL SECTION4 ========== 
 .socials-list {
   display: flex;
   gap: 24px;
@@ -705,7 +708,7 @@ button {
 .socials-link:focus {
   background-color: var(--accent-hoverfa-color);
 }
-/* ================================FORM MODAL====================================== */
+/* ================================FORM MODAL====================================== 
 .paragraph-form {
   font-weight: 500;
   text-align: center;
@@ -740,7 +743,6 @@ button {
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 8px;
   padding-left: 34px;
 }
 
@@ -772,11 +774,12 @@ button {
 }
 .span-input-svg {
   position: relative;
+  margin-bottom: 8px;
 }
 
 .form-icon {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 16px;
   transform: translateY(-50%);
   fill: var(--main-title-color);
@@ -831,7 +834,7 @@ button {
   height: 56px;
 }
 
-/* ===================FORM FOOTER================== */
+/* ===================FORM FOOTER================== 
 .form-footer {
   margin-left: 80px;
   display: flex;
@@ -870,4 +873,4 @@ button {
   top: 8px;
   left: 117px;
   fill: var(--phon-white-color);
-}
+} */

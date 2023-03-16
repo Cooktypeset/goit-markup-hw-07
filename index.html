@@ -15,47 +15,101 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile-styles.css" />
+    <link rel="stylesheet" href="./css/tablet-styles.css" />
+    <link rel="stylesheet" href="./css/desktop-styles.css" />
   </head>
-
   <body>
     <!--HEADER-->
     <header class="top-header">
-      <div class="container page-header-container">
-        <nav class="navigation">
+      <div class="container">
+        <div class="header-container-mobile">
           <a class="link logo" href="./index.html"
             ><span class="logo-span">Web</span>Studio</a
           >
-          <ul class="menu list">
-            <li class="menu-item">
-              <a class="menu-nav link studio-after" href="./index.html"
-                >Studio</a
-              >
+          <button type="button" class="hamburger-button js-open-menu">
+            <svg width="32" height="22" aria-label="menu switch">
+              <use
+                class="iconhamburger"
+                href="./images/icons.svg#icon-hamburger"
+              ></use>
+            </svg>
+          </button>
+        </div>
+        <div class="mobile-menu js-menu-container">
+          <button class="close-mobile js-close-menu" type="button">
+            <svg class="iconbutton" width="8" height="8">
+              <use href="./images/icons.svg#icon-closebutton"></use>
+            </svg>
+          </button>
+          <nav class="navigation">
+            <ul class="menu list">
+              <li class="menu-item">
+                <a class="menu-nav link studio-after" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="menu-item">
+                <a class="menu-nav link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-nav link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="address-content">
+            <ul class="list contact">
+              <li>
+                <a class="link mail address" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="number">
+                <a class="phone-number link address" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="list holder-list">
+            <li class="holder-item">
+              <a class="holder-link" href="https://www.instagram.com/">
+                <svg class="holder-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="menu-item">
-              <a class="menu-nav link" href="./portfolio.html">Portfolio</a>
+            <li class="holder-item">
+              <a class="holder-link" href="https://twitter.com/">
+                <svg class="holder-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li class="menu-item">
-              <a class="menu-nav link" href="">Contacts</a>
+            <li class="holder-item">
+              <a class="holder-link" href="https://www.facebook.com">
+                <svg class="holder-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="holder-item">
+              <a class="holder-link" href="https://ru.linkedin.com/">
+                <svg class="holder-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </nav>
-        <address class="address-content">
-          <ul class="list contact">
-            <li>
-              <a class="link mail address" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="number">
-              <a class="phone-number link address" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
+        </div>
+        <!-- <div class="header-container-desctop">  -->
+        <!-- <a class="link logo" href="./index.html"
+              ><span class="logo-span">Web</span>Studio</a
+            > -->
+        <!-- </div> -->
       </div>
     </header>
+    <!--  -->
     <!--PAGE-->
     <main>
       <!--SECTION1-->
@@ -65,10 +119,18 @@
           <button class="modal-btn modal-text" type="button" data-modal-open>
             Order Service
           </button>
+          <picture>
+            <source
+              srcset="photo.webp 1x, photo@2x.webp 2x"
+              type="image/webp"
+            />
+            <source srcset="photo.jpg 1x, photo@2x.jpg 2x" type="image/jpeg" />
+            <img src="photo.jpg" alt="Кіт" />
+          </picture>
         </div>
       </section>
       <!-- SECTION2 -->
-      <section class="start">
+      <!-- <section class="start">
         <div class="container page-start-container">
           <h2 class="visually-hidden">Qualities</h2>
           <ul class="list start-item">
@@ -122,9 +184,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- SECTION3 -->
-      <section class="content">
+      <!-- <section class="content">
         <div class="container page-content-container">
           <h2 class="subject">What are we doing</h2>
           <ul class="list content-container-item">
@@ -154,9 +216,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- SECTION4 -->
-      <section class="aside">
+      <!-- <section class="aside">
         <div class="container">
           <h2 class="subject">Our Team</h2>
           <ul class="list aside-container-item">
@@ -330,9 +392,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- SECTION5 -->
-      <section class="clients">
+      <!-- <section class="clients">
         <div class="container">
           <h2 class="clients-subtitle">Customers</h2>
           <ul class="list clients-list">
@@ -380,10 +442,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!--FOOTER-->
-    <footer class="holder">
+    <!-- <footer class="holder">
       <div class="container container-holder">
         <div class="page-footer-holder">
           <a class="link logo holder-logo-link" href="./index.html"
@@ -436,14 +498,13 @@
         >
           <div class="form-container-footer">
             <p class="holder-icon-subtitle">Subscribe</p>
-            <label>
-              <input
-                class="input-footer place-input-footer"
-                type="email"
-                name="subscribe-user"
-                placeholder="E-mail"
-              />
-            </label>
+            <input
+              class="input-footer place-input-footer"
+              type="email"
+              name="subscribe-user"
+              placeholder="E-mail"
+              aria-label="email"
+            />
           </div>
           <button class="modal-btn modal-text exclusiv-btnform" type="submit">
             Subscribe
@@ -453,7 +514,7 @@
           </button>
         </form>
       </div>
-    </footer>
+    </footer> -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
         <button type="button" class="modal-close-window" data-modal-close>
