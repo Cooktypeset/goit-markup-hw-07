@@ -1,10 +1,29 @@
-.container {
+/* .container {
   width: 100%;
   max-width: 1158px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+} */
+.content {
+  padding-bottom: 120px;
+}
+.subject {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: var(--main-title-color);
+}
+.content-pic {
+  background: linear-gradient(
+    0deg,
+    rgba(77, 90, 229, 0.1),
+    rgba(77, 90, 229, 0.1)
+  );
+  background-blend-mode: soft-light, normal;
+  border: 1px solid var(--additional-color);
 }
 
 /* :root {
@@ -22,7 +41,6 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  color: var(--main-title-color);
 }
 .list {
   list-style: none;
@@ -198,7 +216,7 @@ button {
   color: var(--accent-hoverfa-color);
 }
 
-.studio-after {W
+.studio-after {
   position: relative;
   padding-top: 24px;
   padding-bottom: 28px;
@@ -394,7 +412,7 @@ button {
 
 .start {
   padding-top: 120px;
-  padding-bottom: 60px;
+  padding-bottom: 120px;
 }
 .start-paragraph-text {
   width: 264px;
@@ -413,7 +431,6 @@ button {
 
 /*=====================================SECTION3=============================
 .content {
-  padding-top: 60px;
   padding-bottom: 120px;
 }
 .subject {
