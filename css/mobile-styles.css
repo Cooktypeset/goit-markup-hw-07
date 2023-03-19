@@ -643,11 +643,21 @@ img {
     display: flex;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .start-item {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+}
+
 .start-paragraph-text {
   width: 100%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .start-paragraph-text {
+    display: flex;
+    flex-wrap: wrap;
     width: 356px;
   }
 }
@@ -869,10 +879,18 @@ img {
 /*================================FOOTER===================================== */
 .container-holder {
   display: flex;
-  flex-direction: column;
-  align-items: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
+  .container-holder {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container-holder {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .container-holder {
@@ -887,7 +905,7 @@ img {
 @media screen and (min-width: 768px) {
   .holder {
     padding-left: 108px;
-    padding-bottom: 164px;
+    padding-right: 164px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -936,6 +954,10 @@ img {
   margin-bottom: 16px;
   margin-top: 0;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .form-footer-paragraph {
+  }
+}
 .holder-list {
   display: flex;
   gap: 16px;
@@ -966,16 +988,27 @@ img {
 /* ===================FORM FOOTER==================  */
 .form-footer {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  gap: 16px;
 }
+@media screen and (max-width: 767px) {
+  .form-footer {
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .form-footer {
+    gap: 24px;
+  }
+}
+
 .form-container-footer {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .input-footer {
   width: 398px;
   height: 40px;
@@ -983,6 +1016,11 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+  .input-footer {
+    width: 264px;
+  }
 }
 .input-footer:hover,
 .input-footer:focus {
