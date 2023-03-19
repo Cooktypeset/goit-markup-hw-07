@@ -158,9 +158,9 @@ button {
 }
 .aside-desc {
   text-align: center;
-}
+/* } */
 
-/* ==============================PORTFOLIOFLEX===================== 
+/* ==============================PORTFOLIOFLEX=====================  */
 .buttons {
   display: flex;
   align-items: center;
