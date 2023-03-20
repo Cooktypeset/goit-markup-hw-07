@@ -79,7 +79,7 @@ button {
 }
 /* =======================HEADER====================== */
 .top-header {
-  border-bottom: 1px solid var(--cornflower-color);
+  border-bottom: 1px solid var(--main-title-color);
 }
 @media screen and (min-width: 768px) {
   .main-header {
