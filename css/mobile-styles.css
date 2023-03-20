@@ -373,22 +373,6 @@ button {
   }
 }
 
-/* .hero-background {
-  max-width: 428px;
-  text-align: center;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/people-mobile.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% 0%;
-  background-size: cover;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 112px 0;
-} */
-
 @media screen and (max-width: 767px),
   (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
