@@ -6,7 +6,7 @@
   padding-left: 15px;
   padding-right: 15px;
 } */
-.content {
+/* .content {
   padding-bottom: 120px;
 }
 .subject {
@@ -24,7 +24,7 @@
   );
   background-blend-mode: soft-light, normal;
   border: 1px solid var(--additional-color);
-}
+} */
 
 /* :root {
   --main-color: #434455;
@@ -125,7 +125,7 @@ button {
 }
 .start-paragraph {
   margin-bottom: 8px;
-}
+}  
 .content-container-item {
   display: flex;
   justify-content: center;
@@ -137,6 +137,7 @@ button {
   text-align: center;
   margin-bottom: 72px;
 }
+
 .aside-container-item {
   display: flex;
   gap: 24px;
