@@ -161,25 +161,6 @@ button {
   text-align: center;
 /* } */
 
-/* ==============================PORTFOLIOFLEX=====================  */
-.buttons {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  margin-bottom: 72px;
-  justify-content: center;
-}
-.images {
-  display: flex;
-  column-gap: 24px;
-  row-gap: 48px;
-  flex-wrap: wrap;
-}
-
-.images-subject {
-  margin-bottom: 8px;
-}
-
 /* ===============================================HEADER================================== 
 /*===================================LOGO===============================
 .top-header {
@@ -586,107 +567,7 @@ button {
   width: 208px;
   margin-left: 120px;
 }
-/* ==========================================PORTFOLIO===================================== 
-/* HEADER IN STUDIO */
-.section-portfolio {
-  padding-top: 96px;
-  padding-bottom: 110px;
-}
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-.modal-button {
-  border: 1px solid var(--additional-color);
-  border-radius: 4px;
-  transition-property: background-color, box-shadow, border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-button:hover,
-.modal-button:focus {
-  background-color: var(--accent-hoverfa-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border: 1px solid var(--accent-hoverfa-color);
-}
-.modal-button:active {
-  background-color: var(--accent-hoverfa-color);
-}
 
-.button-text {
-  font-family: inherit;
-  font-weight: 500;
-  color: var(--ocean-color);
-  padding: 12px 24px;
-  transition-property: color, background-color, box-shadow, border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.button-text:hover,
-.button-text:focus {
-  color: var(--phon-white-color);
-}
-.images-link-picture {
-  display: block;
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.images-link-picture:hover,
-.images-link-picture:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-.subject-text-container {
-  background: var(--phon-white-color);
-  border: 1px solid var(--additional-color);
-  border-top: none;
-  padding: 32px 16px;
-}
-.images-subject {
-  width: 290px;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  color: var(--main-title-color);
-}
-.images-text {
-  color: var(--main-color);
-}
-
-.subject-images-description {
-  position: relative;
-  overflow: hidden;
-}
-.subject-text-description {
-  position: absolute;
-  padding: 40px 32px 164px 32px;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--ocean-color);
-  color: var(--phon-special-color);
-  transform: translateY(100%);
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.description:hover .subject-text-description,
-.description:focus .subject-text-description {
-  transform: translateY(0);
-}
-/* FOOTER IN STUDIO */
 /* ======================ICONS====================== 
 /* ==================DECORATIVEICONS SECTION2================= 
 .decorative-container {
